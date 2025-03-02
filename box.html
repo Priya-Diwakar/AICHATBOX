@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Options</title>
+   <link rel="stylesheet" href="style.css">
+   
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-box teacher-student-box">
+            <h2>Teacher-Student Conversation</h2>
+            <p>Engage in productive discussions between teachers and students.</p>
+            <button onclick="startConversation('teacher-student')">Start Conversation</button>
+        </div>
+        <div class="chat-box ai-client-box">
+            <h2>AI and Client Conversation</h2>
+            <p>Interact with AI-powered assistance for instant support.</p>
+            <form action="ai.html">
+                <button onclick="startConversation('ai-client')"> ai chat</button>
+            </form>
+        </div>
+        <div class="chat-box group-discussion-box">
+            <h2>Group Discussion</h2>
+            <p>Collaborate and share ideas with multiple participants.</p>
+            <button onclick="startConversation('group-discussion')">Start Conversation</button>
+        </div>
+    </div>
+
+    <script>
+        function startConversation(conversationType) {
+            window.location.href = `/start/${conversationType}`;
+        }
+    </script>
+</body>
+</html>

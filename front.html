@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College AI Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: Url("ai.jpg");
+            background-image:center;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(117, 127, 158, 0.498);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        .icon {
+            width: 120px;
+            height: 120px;
+            
+        }
+        .start-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .start-btn:hover {
+            background-color: #0056b3;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="download.png" alt="Chatbot" class="chatbot-icon">
+        <h1>Welcome to College AI Chatbot</h1>
+        <p>Your personal assistant for academic queries, schedules, and more!</p>
+        <form action="sign.html">
+            <button class="start-btn" onclick="startChat()">Sign up</button>
+        </form>
+    </div>
+
+    <script>
+        function startChat() {
+            window.location.href = "chat.html";
+        }
+    </script>
+  
+</body>
+</html>
